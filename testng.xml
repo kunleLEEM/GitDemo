@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  
+  
+  <listeners>
+  <listener class-name="RappE2E.listeners"/>
+  <listener class-name="resources.ExtentReporterNG"/>
+  
+  </listeners>
+  
+  <test thread-count="5" name="Validate login">
+    <classes>
+      <class name="RappE2E.HomePage"/>
+      <class name="RappE2E.AppTest"/>
+      </classes>
+      </test>
+      
+      <test name="Validating NavBar">
+      <classes>
+      <class name="RappE2E.ValidateNavigationBar"/>
+      </classes>
+      </test>
+      
+      <test name="Validating Title">
+      <classes>
+      <class name="RappE2E.ValidateTitle"/>
+    </classes>
+   
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
